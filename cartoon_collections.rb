@@ -1,7 +1,9 @@
 def greet_characters(array)
-  array.each { |elem| puts "Hello #{elem}!" }
+  # Outputs a greeting for each character
+  array.each { |character| puts "Hello #{character}!" }
 end
 
 def list_dwarves(array)
-  array.each_with_index { |elem, idx| puts "#{idx + 1}. #{elem}"}
+  # Listing each dwarf, taking into account that number is 1 more than index since index starts at 0
+  array.each_with_index { |dwarf, idx| puts "#{idx + 1}. #{dwarf}"}
 end
